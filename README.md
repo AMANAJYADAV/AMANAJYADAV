@@ -1,4 +1,4 @@
-## Hi there 👋
+
 <img align="right" src="https://raw.githubusercontent.com/gabrlcj/gabrlcj/2aa161dfb942e25ec84396721837dfccc98e08f2/Illustration.svg" alt="Illustration" title="Illustration Storyset" width="450/">
 <h1 align="left">Hi 👋🏽, I'm Aman Ajeet Yadav</h1>
 <p><img src="https://gpvc.arturio.dev/AMANAJYADAV" alt="Profile views"></p>
