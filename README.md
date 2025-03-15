@@ -5,9 +5,9 @@
 <h3 align="left">🚀 Passionate Python Developer | Data Science & AI Enthusiast</h3>
 <div align="left">
     <h3>👨🏽‍💻 About me:</h3>
-        <p>• 📚 I’m currently learning: <b>Advanced Python & Django, Machine Learning & AI, Applied Data Science (IBM), Data Science using Python.</b></p>
+        <p>• 📚 I’m currently learning: <b>Advanced Python & Django, Machine Learning & AI, Applied Data Science (IBM), Data Science using Python(IBM), Deep Learning with TensorFlow(IBM).</b></p>
         <p>• ℹ️ Hobbies: <b>Games 🎮 | Music 🎧 | Exercise 🏃 | Research 🔍</b></p>
-        <p>• 💬 Ask me about: <b>Python, Data Science, Machine Learning, and AI</b></p>
+        <p>• 💬 Ask me about: <b>Python, Data Science, Machine Learning, Data Visualization, Data Analysis, Data Cleaning, Deep Learning and AI</b></p>
         <p>• 📫 How to reach me: <b>amanjetasb@gmail.com</b></p>
 </div><br>
 <div align="center">
