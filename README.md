@@ -39,7 +39,7 @@
 <hr>
 <div>
   <h3>📱 Social Medias:</h3><br>
-    <a href="https://www.linkedin.com/in/aman-yadav-a90a2b340/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Aman%20Ajeet%20Yadav-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+    <a href="https://www.linkedin.com/in/aj-amanajeetyadav/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Aman%20Ajeet%20Yadav-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
     <a href="https://github.com/AMANAJYADAV" target="_blank"><img src="https://img.shields.io/badge/GitHub-AMANAJYADAV-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
     <a href="mailto:amanjetasb@gmail.com"><img src="https://img.shields.io/badge/Email-amanjetasb@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </div>
