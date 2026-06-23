@@ -57,11 +57,12 @@ To deploy: Save as README.md in your github.com/AMANAJYADAV/AMANAJYADAV repo
 
 Click below to explore interactive visualizations:
 
-[![3D Orange Animation](https://img.shields.io/badge/🍊_3D_Interactive_Orange-FF8C00?style=for-the-badge&logo=html5&logoColor=white)](https://github.io)
+[![3D Orange Animation](https://img.shields.io/badge/🍊_3D_Interactive_Orange-FF8C00?style=for-the-badge&logo=html5&logoColor=white)](https://AMANAJYADAV.github.io/AMANAJYADAV/interactive-3d-orange.html)
 &nbsp;
-[![3D Graph](https://img.shields.io/badge/📊_3D_Contribution_Graph-00D4FF?style=for-the-badge&logo=chart-line&logoColor=white)](https://github.io)
+[![3D Graph](https://img.shields.io/badge/📊_3D_Contribution_Graph-00D4FF?style=for-the-badge&logo=chart-line&logoColor=white)](https://AMANAJYADAV.github.io/AMANAJYADAV/3d-contribution-graph.html)
 &nbsp;
-[![3D Snake](https://img.shields.io/badge/🐍_3D_Snake_Game-00FF88?style=for-the-badge&logo=gamepad&logoColor=white)](https://github.io)
+[![3D Snake](https://img.shields.io/badge/🐍_3D_Snake_Game-00FF88?style=for-the-badge&logo=gamepad&logoColor=white)](https://AMANAJYADAV.github.io/AMANAJYADAV/3d-snake-animation.html)
+
 
 <sub>✨ Hover over the orange to squeeze it and watch juice flow! | Rotate the 3D graph with your mouse | Play the interactive snake game!</sub>
 
@@ -133,11 +134,14 @@ class AmanAjeetYadav:
 
 ![Illustration](https://raw.githubusercontent.com/gabrlcj/gabrlcj/2aa161dfb942e25ec84396721837dfccc98e08f2/Illustration.svg)
 
-**Interactive 3D Orange 👇**
+## `< 3D Interactive Orange />`
 
-<a href="https://github.io" target="_blank">
-  <img src="https://img.shields.io/badge/Hover_Me_to_Squeeze-FF8C00?style=flat-square&logo=clapper&logoColor=white" alt="Interactive Orange"/>
+### 🍊 Hover over the orange or tap to squeeze it and watch the juice flow in 3D!
+
+<a href="https://AMANAJYADAV.github.io/AMANAJYADAV/interactive-3d-orange.html" target="_blank">
+  <img src="https://img.shields.io/badge/🍊_Squeeze_3D_Orange-FF8C00?style=for-the-badge&logo=html5&logoColor=white" alt="3D Interactive Orange"/>
 </a>
+
 <sub>Watch realistic juice flow animation!</sub>
 
 </div>
@@ -184,7 +188,7 @@ class AmanAjeetYadav:
 
 ### 📊 Interactive Visualization — Click below to explore your contributions in stunning 3D!
 
-<a href="https://github.io" target="_blank">
+<a href="https://AMANAJYADAV.github.io/AMANAJYADAV/3d-contribution-graph.html" target="_blank">
   <img src="https://img.shields.io/badge/🎨_Launch_3D_Graph_Viewer-00D4FF?style=for-the-badge&logo=chart-line&logoColor=white" alt="3D Graph"/>
 </a>
 
@@ -212,7 +216,7 @@ class AmanAjeetYadav:
 
 ### 🐍 Watch the snake devour contribution squares in glorious 3D!
 
-<a href="https://github.io" target="_blank">
+<a href="https://AMANAJYADAV.github.io/AMANAJYADAV/3d-snake-animation.html" target="_blank">
   <img src="https://img.shields.io/badge/▶_Play_3D_Snake_Game-00FF88?style=for-the-badge&logo=gamepad&logoColor=white" alt="Snake Game"/>
 </a>
 
