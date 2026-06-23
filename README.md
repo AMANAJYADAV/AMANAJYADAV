@@ -134,7 +134,7 @@ class AmanAjeetYadav:
 
 ![Illustration](https://raw.githubusercontent.com/gabrlcj/gabrlcj/2aa161dfb942e25ec84396721837dfccc98e08f2/Illustration.svg)
 
-## `< 3D Interactive Orange />`
+## `3D Interactive Orange `
 
 ### 🍊 Hover over the orange or tap to squeeze it and watch the juice flow in 3D!
 
