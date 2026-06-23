@@ -56,11 +56,11 @@ To deploy: Save as README.md in your github.com/AMANAJYADAV/AMANAJYADAV repo
 
 Click below to explore interactive visualizations:
 
-[![3D Orange Animation](https://img.shields.io/badge/🍊_3D_Interactive_Orange-FF8C00?style=for-the-badge&logo=3d&logoColor=white)](https://amanajyadav.github.io/interactive-3d-orange.html)
+[![3D Orange Animation](https://img.shields.io/badge/🍊_3D_Interactive_Orange-FF8C00?style=for-the-badge&logo=3d&logoColor=white)](https://github.io)
 &nbsp;
-[![3D Graph](https://img.shields.io/badge/📊_3D_Contribution_Graph-00D4FF?style=for-the-badge&logo=chart-line&logoColor=white)](https://amanajyadav.github.io/3d-contribution-graph.html)
+[![3D Graph](https://img.shields.io/badge/📊_3D_Contribution_Graph-00D4FF?style=for-the-badge&logo=chart-line&logoColor=white)](https://github.io)
 &nbsp;
-[![3D Snake](https://img.shields.io/badge/🐍_3D_Snake_Game-00FF88?style=for-the-badge&logo=game-controller&logoColor=white)](https://amanajyadav.github.io/3d-snake-animation.html)
+[![3D Snake](https://img.shields.io/badge/🐍_3D_Snake_Game-00FF88?style=for-the-badge&logo=game-controller&logoColor=white)](https://github.io)
 
 <sub>✨ Hover over the orange to squeeze it and watch juice flow! | Rotate the 3D graph with your mouse | Play the interactive snake game!</sub>
 
