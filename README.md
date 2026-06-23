@@ -20,7 +20,8 @@ To deploy: Save as README.md in your github.com/AMANAJYADAV/AMANAJYADAV repo
 
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Aman%20Ajeet%20Yadav&fontSize=52&fontColor=00f5ff&fontAlignY=38&animation=twinkling&desc=Python%20Developer%20%7C%20Data%20Science%20%26%20AI%20Enthusiast&descSize=18&descAlignY=58&descColor=e0e0ff)
+![Header Banner](https://capsule-render.vercel.app/api?type=venom&color=0:0a0a2e,40:1a0533,70:0d2b45,100:0a3d2e&height=220&section=header&text=Aman%20Ajeet%20Yadav&fontSize=55&fontColor=a8edea&fontAlignY=40&animation=fadeIn&desc=%E2%97%88%20Python%20Developer%20%E2%97%88%20Data%20Science%20%E2%97%88%20AI%20Enthusiast%20%E2%97%88&descSize=16&descAlignY=62&descColor=fed6e3)
+
 
 <!-- ═ Animated Typing Tagline ═ -->
 
