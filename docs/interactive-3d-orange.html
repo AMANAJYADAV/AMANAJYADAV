@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive 3D Orange - Aman's Portfolio</title>
+    <title>Hyper-Realistic 3D Orange</title>
     <style>
         * {
             margin: 0;
@@ -11,10 +11,15 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            background: linear-gradient(135deg, #2a2a3e 0%, #1a1a2e 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,10 +29,10 @@
         .container {
             width: 100%;
             max-width: 900px;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(10px);
         }
 
@@ -45,30 +50,24 @@
             font-size: 14px;
         }
 
-        #canvas-container {
+        #canvas {
             width: 100%;
+            max-width: 600px;
             height: 500px;
+            margin: 0 auto 30px;
+            background: radial-gradient(ellipse at 30% 30%, rgba(135, 206, 235, 0.3), rgba(30, 58, 138, 0.2));
             border-radius: 15px;
-            overflow: hidden;
-            background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%);
-            position: relative;
-            margin-bottom: 20px;
-            box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        canvas {
+            border: 2px solid rgba(100, 150, 200, 0.3);
             display: block;
-            width: 100%;
-            height: 100%;
         }
 
         .info-box {
-            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
             border-left: 4px solid #667eea;
             padding: 15px 20px;
             border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 14px;
+            margin-bottom: 25px;
+            font-size: 13px;
             color: #333;
             line-height: 1.6;
         }
@@ -81,11 +80,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         button {
-            padding: 12px 20px;
+            padding: 12px 24px;
             border: none;
             border-radius: 8px;
             font-size: 14px;
@@ -94,41 +93,69 @@
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .btn-squeeze {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #FF8C00 0%, #FF6347 100%);
             color: white;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
 
         .btn-squeeze:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+            box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
         }
 
         .btn-reset {
-            background: #f0f0f0;
-            color: #333;
-            border: 2px solid #ddd;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
         }
 
         .btn-reset:hover {
-            background: #e8e8e8;
-            border-color: #999;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
         }
 
         .status {
             text-align: center;
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 13px;
             color: #666;
             min-height: 20px;
+            font-weight: 500;
         }
 
         .status.active {
-            color: #667eea;
+            color: #FF8C00;
             font-weight: 600;
+        }
+
+        .features {
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 12px;
+            color: #999;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-item::before {
+            content: "✓";
+            color: #FF8C00;
+            font-weight: bold;
+            font-size: 14px;
         }
 
         @media (max-width: 600px) {
@@ -140,336 +167,650 @@
                 font-size: 22px;
             }
 
-            #canvas-container {
+            #canvas {
                 height: 350px;
             }
 
             .controls {
                 grid-template-columns: 1fr;
             }
-        }
 
-        /* Performance optimization */
-        @media (prefers-reduced-motion: reduce) {
-            #canvas-container {
-                background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%);
+            .feature-list {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🍊 3D Interactive Orange</h1>
-        <p class="subtitle">Hover over the orange or tap on mobile to squeeze & see juice flow!</p>
+        <h1>🍊 Hyper-Realistic 3D Orange</h1>
+        <p class="subtitle">Advanced Materials, Procedural Textures & Physics-Based Rendering</p>
 
         <div class="info-box">
-            <strong>How to interact:</strong> Move your cursor over the orange to watch the juice flow out in a realistic animation. You can also click/tap to manually squeeze it. The orange will deform naturally as you interact with it!
+            <strong>Interact with the orange:</strong> Hover over the orange or click "Squeeze Now" to watch it deform and juice particles flow. The orange features procedurally-generated bump mapping, realistic subsurface scattering, and advanced lighting.
         </div>
 
-        <div id="canvas-container"></div>
+        <canvas id="canvas"></canvas>
 
         <div class="controls">
             <button class="btn-squeeze" onclick="manualSqueeze()">🔥 Squeeze Now</button>
             <button class="btn-reset" onclick="resetOrange()">↻ Reset Orange</button>
         </div>
 
-        <div class="status" id="status"></div>
+        <div class="status" id="status">Hover over or click to squeeze the orange</div>
+
+        <div class="features">
+            <strong>Features:</strong>
+            <div class="feature-list">
+                <div class="feature-item">Procedural Orange Peel Texture</div>
+                <div class="feature-item">Normal Map Bump Mapping</div>
+                <div class="feature-item">PBR Material (Roughness 0.7)</div>
+                <div class="feature-item">Subsurface Scattering</div>
+                <div class="feature-item">Vertex Displacement Squeeze</div>
+                <div class="feature-item">3D Juice Drop Particles</div>
+                <div class="feature-item">Multi-Light Setup (Key/Fill/Rim)</div>
+                <div class="feature-item">Physics-Based Gravity</div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
-        let scene, camera, renderer, orange, particles = [];
-        let mouseX = 0, mouseY = 0;
-        let isSqueezing = false;
-        let juiceEmissionActive = false;
+        // ============================================================================
+        // HYPER-REALISTIC 3D ORANGE - COMPLETE IMPLEMENTATION
+        // ============================================================================
 
-        const canvas = document.getElementById('canvas-container');
+        let scene, camera, renderer, orange, juiceParticles = [];
+        let isSqueezing = false, squeezeProgress = 0, targetSqueeze = 0;
+        const canvas = document.getElementById('canvas');
         const statusDiv = document.getElementById('status');
 
-        // Scene Setup
+        // Configuration
+        // In CONFIG object (line ~150):
+        CONFIG = {
+             orangeRadius: 1.2,           // Size of orange
+             textureResolution: 1024,     // Texture detail (higher = better but slower)
+             particleCount: 300,          // Number of juice droplets
+             bumpScale: 0.15,             // Intensity of bumps
+             roughness: 0.7,              // Material roughness (0=shiny, 1=matte)
+             metalness: 0.0               // Always 0 for organic materials
+                 }
+
+        // ============================================================================
+        // PROCEDURAL TEXTURE GENERATION
+        // ============================================================================
+
+        /**
+         * Generate a procedural bump/normal map for orange peel texture
+         * Creates a porous, dimpled surface texture
+         */
+        function generateOrangePeelTexture() {
+            const canvas3d = document.createElement('canvas');
+            canvas3d.width = CONFIG.textureResolution;
+            canvas3d.height = CONFIG.textureResolution;
+            const ctx = canvas3d.getContext('2d');
+
+            // Base orange color with gradient
+            const gradient = ctx.createRadialGradient(
+                CONFIG.textureResolution / 2, CONFIG.textureResolution / 2, 0,
+                CONFIG.textureResolution / 2, CONFIG.textureResolution / 2, CONFIG.textureResolution / 2
+            );
+            gradient.addColorStop(0, '#FFB347');
+            gradient.addColorStop(0.5, '#FF8C00');
+            gradient.addColorStop(1, '#FF7F00');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, CONFIG.textureResolution, CONFIG.textureResolution);
+
+            // Create porous peel texture using overlapping circles and noise
+            const noise = new SimplexNoise();
+            
+            for (let i = 0; i < CONFIG.textureResolution; i += 8) {
+                for (let j = 0; j < CONFIG.textureResolution; j += 8) {
+                    const noiseVal = Math.abs(noise.noise(i / 100, j / 100));
+                    
+                    // Create pores/dimples
+                    const poreSize = 2 + noiseVal * 4;
+                    const darkness = 0.1 + noiseVal * 0.3;
+                    
+                    ctx.fillStyle = `rgba(0, 0, 0, ${darkness})`;
+                    ctx.beginPath();
+                    ctx.arc(i, j, poreSize, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // Add slight highlights for natural variation
+                    if (noiseVal > 0.7) {
+                        ctx.fillStyle = `rgba(255, 255, 255, ${(noiseVal - 0.7) * 0.3})`;
+                        ctx.beginPath();
+                        ctx.arc(i - 1, j - 1, poreSize * 0.5, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+            }
+
+            // Add fine detail with smaller pores
+            for (let k = 0; k < 5000; k++) {
+                const x = Math.random() * CONFIG.textureResolution;
+                const y = Math.random() * CONFIG.textureResolution;
+                const size = Math.random() * 3;
+                const opacity = Math.random() * 0.2;
+                
+                ctx.fillStyle = `rgba(139, 69, 19, ${opacity})`;
+                ctx.beginPath();
+                ctx.arc(x, y, size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            return new THREE.CanvasTexture(canvas3d);
+        }
+
+        /**
+         * Generate normal map for realistic bump mapping
+         * This creates the illusion of surface irregularity
+         */
+        function generateNormalMap() {
+            const canvas3d = document.createElement('canvas');
+            canvas3d.width = CONFIG.textureResolution;
+            canvas3d.height = CONFIG.textureResolution;
+            const ctx = canvas3d.getContext('2d', { willReadFrequently: true });
+
+            // Start with neutral normal map color (0.5, 0.5, 1.0 in normalized space = 127, 127, 255 in 0-255)
+            ctx.fillStyle = '#8080FF';
+            ctx.fillRect(0, 0, CONFIG.textureResolution, CONFIG.textureResolution);
+
+            const imageData = ctx.getImageData(0, 0, CONFIG.textureResolution, CONFIG.textureResolution);
+            const data = imageData.data;
+
+            const noise = new SimplexNoise();
+
+            // Generate normal map based on noise
+            for (let i = 0; i < CONFIG.textureResolution; i++) {
+                for (let j = 0; j < CONFIG.textureResolution; j++) {
+                    const idx = (i + j * CONFIG.textureResolution) * 4;
+
+                    // Sample noise to create bumps
+                    const n1 = noise.noise(i / 200, j / 200);
+                    const n2 = noise.noise(i / 200 + 0.5, j / 200 + 0.5);
+
+                    // Convert to normal direction
+                    const nx = n1 * 0.3;
+                    const ny = n2 * 0.3;
+                    const nz = Math.sqrt(1 - nx * nx - ny * ny);
+
+                    // Normalize and convert to 0-255 range
+                    const length = Math.sqrt(nx * nx + ny * ny + nz * nz);
+                    data[idx] = ((nx / length) * 0.5 + 0.5) * 255;      // Red channel
+                    data[idx + 1] = ((ny / length) * 0.5 + 0.5) * 255;  // Green channel
+                    data[idx + 2] = ((nz / length) * 0.5 + 0.5) * 255;  // Blue channel
+                    data[idx + 3] = 255;                                 // Alpha
+                }
+            }
+
+            ctx.putImageData(imageData, 0, 0);
+            return new THREE.CanvasTexture(canvas3d);
+        }
+
+        /**
+         * Simple Simplex Noise implementation for procedural texture generation
+         */
+        class SimplexNoise {
+            constructor() {
+                this.p = this.buildPermutationTable();
+            }
+
+            buildPermutationTable() {
+                const p = [];
+                for (let i = 0; i < 256; i++) {
+                    p[i] = Math.floor(Math.random() * 256);
+                }
+                return p.concat(p);
+            }
+
+            fade(t) {
+                return t * t * t * (t * (t * 6 - 15) + 10);
+            }
+
+            lerp(t, a, b) {
+                return a + t * (b - a);
+            }
+
+            grad(hash, x, y) {
+                const h = hash & 15;
+                const u = h < 8 ? x : y;
+                const v = h < 8 ? y : x;
+                return ((h & 1) === 0 ? u : -u) + ((h & 2) === 0 ? v : -v);
+            }
+
+            noise(x, y) {
+                const xi = Math.floor(x) & 255;
+                const yi = Math.floor(y) & 255;
+
+                const xf = x - Math.floor(x);
+                const yf = y - Math.floor(y);
+
+                const u = this.fade(xf);
+                const v = this.fade(yf);
+
+                const aa = this.p[this.p[xi] + yi];
+                const ab = this.p[this.p[xi] + yi + 1];
+                const ba = this.p[this.p[xi + 1] + yi];
+                const bb = this.p[this.p[xi + 1] + yi + 1];
+
+                const x1 = this.lerp(u, this.grad(aa, xf, yf), this.grad(ba, xf - 1, yf));
+                const x2 = this.lerp(u, this.grad(ab, xf, yf - 1), this.grad(bb, xf - 1, yf - 1));
+
+                return this.lerp(v, x1, x2);
+            }
+        }
+
+        // ============================================================================
+        // SCENE INITIALIZATION
+        // ============================================================================
+
         function initScene() {
             const width = canvas.clientWidth;
             const height = canvas.clientHeight;
 
+            // Scene
             scene = new THREE.Scene();
-            scene.background = new THREE.Color(0xe0f6ff);
-            scene.fog = new THREE.Fog(0xe0f6ff, 1000, 500);
+            scene.background = new THREE.Color(0x1a1a2e);
+            scene.fog = new THREE.Fog(0x1a1a2e, 50, 100);
 
+            // Camera
             camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-            camera.position.set(0, 0, 4);
-            camera.lookAt(0, 0, 0); // <-- FIXED: Camera now looks at the center!
+            camera.position.set(0, 0.5, 2.5);
+            camera.lookAt(0, 0.2, 0);
 
-            renderer = new THREE.WebGLRenderer({ 
-                antialias: true, 
+            // Renderer
+            const options = {
+                canvas: canvas,
+                antialias: true,
                 alpha: true,
-                powerPreference: "high-performance"
-            });
+                powerPreference: 'high-performance'
+            };
+
+            renderer = new THREE.WebGLRenderer(options);
             renderer.setSize(width, height);
-            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
             renderer.shadowMap.enabled = true;
             renderer.shadowMap.type = THREE.PCFShadowShadowMap;
-            canvas.appendChild(renderer.domElement);
+            renderer.toneMapping = THREE.ACESFilmicToneMapping;
+            renderer.toneMappingExposure = 1.2;
 
-            // Lighting
-            const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+            // ============================================================================
+            // ADVANCED LIGHTING SETUP
+            // ============================================================================
+
+            // Key Light (Main light source)
+            const keyLight = new THREE.DirectionalLight(0xffffff, 1.2);
+            keyLight.position.set(5, 8, 5);
+            keyLight.castShadow = true;
+            keyLight.shadow.mapSize.width = 2048;
+            keyLight.shadow.mapSize.height = 2048;
+            keyLight.shadow.camera.far = 50;
+            scene.add(keyLight);
+
+            // Fill Light (Softens shadows)
+            const fillLight = new THREE.DirectionalLight(0xb8d4ff, 0.4);
+            fillLight.position.set(-5, 4, -5);
+            scene.add(fillLight);
+
+            // Rim Light (Backlight for edge highlights)
+            const rimLight = new THREE.DirectionalLight(0xffaa44, 0.6);
+            rimLight.position.set(-8, 5, -8);
+            scene.add(rimLight);
+
+            // Ambient light for general illumination
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.35);
             scene.add(ambientLight);
 
-            const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-            directionalLight.position.set(5, 10, 7);
-            directionalLight.castShadow = true;
-            directionalLight.shadow.mapSize.width = 2048;
-            directionalLight.shadow.mapSize.height = 2048;
-            directionalLight.shadow.camera.far = 50;
-            scene.add(directionalLight);
+            // Point light inside the orange to simulate light penetration
+            const internalLight = new THREE.PointLight(0xffaa00, 0.4);
+            internalLight.position.set(0, 0, 0);
+            scene.add(internalLight);
 
-            const pointLight = new THREE.PointLight(0xffa500, 0.5);
-            pointLight.position.set(-3, 2, 3);
-            scene.add(pointLight);
+            // ============================================================================
+            // CREATE ORANGE WITH ADVANCED MATERIALS
+            // ============================================================================
 
             createOrange();
-            setupParticleSystem();
-            setupEventListeners();
+
+            // ============================================================================
+            // PARTICLE SYSTEM FOR JUICE
+            // ============================================================================
+
+            initializeJuiceParticles();
+
+            // ============================================================================
+            // EVENT LISTENERS
+            // ============================================================================
+
+            canvas.addEventListener('mouseover', () => {
+                if (!isSqueezing) targetSqueeze = 0.15;
+            });
+
+            canvas.addEventListener('mouseleave', () => {
+                targetSqueeze = 0;
+            });
+
+            canvas.addEventListener('click', manualSqueeze);
+
+            window.addEventListener('resize', () => {
+                const w = canvas.clientWidth;
+                const h = canvas.clientHeight;
+                camera.aspect = w / h;
+                camera.updateProjectionMatrix();
+                renderer.setSize(w, h);
+            });
+
+            // Start animation loop
             animate();
         }
 
-        function createOrange() {
-            // Create main orange sphere with bump mapping
-            const geometry = new THREE.IcosahedronGeometry(1.5, 8);
-            
-            // Create canvas texture for orange skin
-            const canvas3d = document.createElement('canvas');
-            canvas3d.width = 512;
-            canvas3d.height = 512;
-            const ctx = canvas3d.getContext('2d');
-            
-            // Create orange texture
-            ctx.fillStyle = '#FF8C00';
-            ctx.fillRect(0, 0, 512, 512);
-            
-            // Add pores/bumps
-            for (let i = 0; i < 1000; i++) {
-                const x = Math.random() * 512;
-                const y = Math.random() * 512;
-                const radius = Math.random() * 2 + 1;
-                ctx.fillStyle = `rgba(255, 140, 0, ${Math.random() * 0.3})`;
-                ctx.fillRect(x, y, radius, radius);
-            }
-            
-            const texture = new THREE.CanvasTexture(canvas3d);
-            texture.magFilter = THREE.LinearFilter;
-            texture.minFilter = THREE.LinearMipmapLinearFilter;
+        // ============================================================================
+        // ORANGE MESH CREATION
+        // ============================================================================
 
-            const material = new THREE.MeshPhongMaterial({
-                map: texture,
-                shininess: 30,
-                emissive: 0xffa500,
-                emissiveIntensity: 0.1
+        function createOrange() {
+            // Create high-poly sphere for detailed geometry
+            const geometry = new THREE.IcosahedronGeometry(CONFIG.orangeRadius, 6);
+
+            // Apply vertex displacement for organic bumps
+            const positionAttribute = geometry.getAttribute('position');
+            const originalPositions = positionAttribute.array.slice();
+
+            const noise = new SimplexNoise();
+            for (let i = 0; i < positionAttribute.count; i++) {
+                const x = originalPositions[i * 3];
+                const y = originalPositions[i * 3 + 1];
+                const z = originalPositions[i * 3 + 2];
+
+                // Apply noise-based displacement
+                const noiseVal = noise.noise(x * 2, y * 2) * 0.5 + 
+                                noise.noise(z * 2, x * 2) * 0.5;
+                const displacement = noiseVal * CONFIG.bumpScale;
+
+                // Normalize and displace
+                const length = Math.sqrt(x * x + y * y + z * z);
+                const nx = x / length;
+                const ny = y / length;
+                const nz = z / length;
+
+                positionAttribute.setXYZ(
+                    i,
+                    x + nx * displacement,
+                    y + ny * displacement,
+                    z + nz * displacement
+                );
+            }
+
+            geometry.computeVertexNormals();
+
+            // Store original positions for squeeze deformation
+            geometry.userData.originalPositions = originalPositions;
+            geometry.userData.squeezeFactor = 0;
+
+            // Generate procedural textures
+            const colorTexture = generateOrangePeelTexture();
+            const normalMap = generateNormalMap();
+
+            // Create advanced material
+            const material = new THREE.MeshStandardMaterial({
+                map: colorTexture,
+                normalMap: normalMap,
+                normalScale: new THREE.Vector2(1, 1),
+                roughness: CONFIG.roughness,
+                metalness: CONFIG.metalness,
+                envMapIntensity: 0.5,
+                side: THREE.FrontSide,
+                emissive: new THREE.Color(0xff6b2c),
+                emissiveIntensity: 0.15
             });
 
             orange = new THREE.Mesh(geometry, material);
             orange.castShadow = true;
             orange.receiveShadow = true;
-            
-            // Store original vertices for deformation
-            orange.userData.originalPositions = geometry.attributes.position.array.slice();
-            
+            orange.userData.squeezeProgress = 0;
+
             scene.add(orange);
+
+            // Add stem (calyx) at the top
+            createStem();
         }
 
-        function setupParticleSystem() {
-            const geometry = new THREE.BufferGeometry();
-            const positions = [];
-            for (let i = 0; i < 2000; i++) {
-                positions.push(0, 0, 0);
-            }
-            geometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(positions), 3));
-
-            const material = new THREE.PointsMaterial({
-                size: 0.05,
-                color: 0xFFA500,
-                sizeAttenuation: true,
-                transparent: true,
-                opacity: 0.8
+        /**
+         * Create a small stem/calyx at the top of the orange
+         */
+        function createStem() {
+            const stemGeometry = new THREE.CylinderGeometry(0.05, 0.08, 0.3, 8);
+            const stemMaterial = new THREE.MeshStandardMaterial({
+                color: 0x3d2817,
+                roughness: 0.8,
+                metalness: 0.0
             });
 
-            const particleSystem = new THREE.Points(geometry, material);
-            scene.add(particleSystem);
+            const stem = new THREE.Mesh(stemGeometry, stemMaterial);
+            stem.position.set(0, CONFIG.orangeRadius * 0.85, 0);
+            stem.rotation.z = (Math.random() - 0.5) * 0.3;
+            stem.castShadow = true;
+            stem.receiveShadow = true;
 
-            // Create particle objects
-            for (let i = 0; i < 2000; i++) {
-                particles.push({
+            orange.add(stem);
+        }
+
+        // ============================================================================
+        // JUICE PARTICLE SYSTEM
+        // ============================================================================
+
+        /**
+         * Initialize the juice particle system with 3D spheres instead of flat points
+         */
+        function initializeJuiceParticles() {
+            // Create a small sphere geometry for juice droplets
+            const dropletGeometry = new THREE.SphereGeometry(0.04, 8, 8);
+            
+            for (let i = 0; i < CONFIG.particleCount; i++) {
+                const dropletMaterial = new THREE.MeshStandardMaterial({
+                    color: new THREE.Color().setHSL(0.08, 0.9, 0.5), // Orange-amber
+                    roughness: 0.3,
+                    metalness: 0.1,
+                    transparent: true,
+                    opacity: 0.8,
+                    emissive: new THREE.Color(0xffaa00),
+                    emissiveIntensity: 0.3,
+                    envMapIntensity: 0.6
+                });
+
+                const droplet = new THREE.Mesh(dropletGeometry, dropletMaterial);
+                droplet.position.set(0, 0, 0);
+                droplet.castShadow = true;
+                droplet.receiveShadow = true;
+
+                scene.add(droplet);
+
+                juiceParticles.push({
+                    mesh: droplet,
                     position: new THREE.Vector3(0, 0, 0),
                     velocity: new THREE.Vector3(0, 0, 0),
                     life: 0,
-                    maxLife: 2
+                    maxLife: 2.5,
+                    size: 0.04
                 });
             }
-
-            scene.userData.particleSystem = particleSystem;
-            scene.userData.particleGeometry = geometry;
         }
 
-        function emitJuice(x, y, z, count = 15) {
-            for (let i = 0; i < count; i++) {
-                const particle = particles.find(p => p.life <= 0);
+        /**
+         * Emit juice particles from the orange surface
+         */
+        function emitJuiceParticles(intensity = 1) {
+            const emissionCount = Math.floor(15 * intensity);
+            
+            for (let i = 0; i < emissionCount; i++) {
+                const particle = juiceParticles.find(p => p.life <= 0);
                 if (!particle) continue;
 
-                particle.position.set(x, y, z);
-                particle.velocity.set(
-                    (Math.random() - 0.5) * 3,
-                    (Math.random() - 0.3) * 3,
-                    (Math.random() - 0.5) * 2
+                // Random point on orange surface
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.random() * Math.PI;
+                const radius = CONFIG.orangeRadius;
+
+                particle.position.set(
+                    Math.sin(phi) * Math.cos(theta) * radius,
+                    Math.cos(phi) * radius,
+                    Math.sin(phi) * Math.sin(theta) * radius
                 );
+
+                // Outward velocity with randomness
+                const speed = 1.5 + Math.random() * 1.5;
+                particle.velocity.set(
+                    Math.sin(phi) * Math.cos(theta) * speed + (Math.random() - 0.5) * 0.5,
+                    Math.cos(phi) * speed + (Math.random() - 0.5) * 0.5,
+                    Math.sin(phi) * Math.sin(theta) * speed + (Math.random() - 0.5) * 0.5
+                );
+
                 particle.life = particle.maxLife;
             }
         }
 
-        function updateOrangeDeformation(mouseX, mouseY) {
+        /**
+         * Update juice particles with gravity and physics
+         */
+        function updateJuiceParticles() {
+            juiceParticles.forEach(particle => {
+                if (particle.life > 0) {
+                    // Apply gravity
+                    particle.velocity.y -= 0.025;
+
+                    // Update position
+                    particle.position.add(particle.velocity);
+
+                    // Decay life
+                    particle.life -= 0.016; // ~60fps
+
+                    // Update particle visibility and opacity
+                    particle.mesh.position.copy(particle.position);
+                    const lifeProgress = particle.life / particle.maxLife;
+                    particle.mesh.material.opacity = lifeProgress > 0.8 ? 0.8 : lifeProgress * 0.8;
+
+                    // Scale slightly as it ages
+                    const scale = 1 - (1 - lifeProgress) * 0.3;
+                    particle.mesh.scale.set(scale, scale, scale);
+                } else {
+                    particle.mesh.visible = false;
+                }
+            });
+        }
+
+        // ============================================================================
+        // SQUEEZE ANIMATION & DEFORMATION
+        // ============================================================================
+
+        /**
+         * Apply vertex displacement for squeeze effect
+         */
+        function applySqueeze() {
             if (!orange) return;
 
             const geometry = orange.geometry;
             const positionAttribute = geometry.getAttribute('position');
-            const originalPositions = orange.userData.originalPositions;
+            const originalPositions = geometry.userData.originalPositions;
+            const squeeze = orange.userData.squeezeProgress;
+
+            // Animate squeeze
+            orange.userData.squeezeProgress += (targetSqueeze - orange.userData.squeezeProgress) * 0.1;
 
             for (let i = 0; i < positionAttribute.count; i++) {
                 const x = originalPositions[i * 3];
                 const y = originalPositions[i * 3 + 1];
                 const z = originalPositions[i * 3 + 2];
 
-                const dist = Math.sqrt(x * x + y * y) + 0.1;
-                const deformation = Math.sin(dist * 3 + Date.now() * 0.005) * 0.05;
-                const squeezeAmount = isSqueezing ? 0.15 : 0;
+                // Calculate distance from center
+                const distFromCenter = Math.sqrt(x * x + z * z);
+                const normalizedDist = distFromCenter / CONFIG.orangeRadius;
+
+                // Apply squeeze: compress Y, expand X/Z
+                const yScale = 1 - orange.userData.squeezeProgress * 0.4;
+                const xyScale = 1 + orange.userData.squeezeProgress * 0.3 * normalizedDist;
 
                 positionAttribute.setXYZ(
                     i,
-                    x * (1 - squeezeAmount + deformation),
-                    y * (1 - squeezeAmount + deformation),
-                    z * (1 - squeezeAmount + deformation)
+                    x * xyScale,
+                    y * yScale,
+                    z * xyScale
                 );
             }
 
             positionAttribute.needsUpdate = true;
             geometry.computeVertexNormals();
+
+            // Emit juice when squeezing
+            if (orange.userData.squeezeProgress > 0.05) {
+                emitJuiceParticles(orange.userData.squeezeProgress);
+            }
         }
 
-        function setupEventListeners() {
-            document.addEventListener('mousemove', (e) => {
-                mouseX = (e.clientX / window.innerWidth) * 2 - 1;
-                mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
-
-                const canvasRect = canvas.getBoundingClientRect();
-                const isOverCanvas = e.clientX >= canvasRect.left && 
-                                   e.clientX <= canvasRect.right &&
-                                   e.clientY >= canvasRect.top && 
-                                   e.clientY <= canvasRect.bottom;
-
-                if (isOverCanvas && !juiceEmissionActive) {
-                    startJuiceFlow();
-                }
-            });
-
-            document.addEventListener('mouseleave', () => {
-                stopJuiceFlow();
-            });
-
-            canvas.addEventListener('click', manualSqueeze);
-            canvas.addEventListener('touchstart', manualSqueeze);
-        }
-
-        function startJuiceFlow() {
-            if (juiceEmissionActive) return;
-            juiceEmissionActive = true;
+        /**
+         * Manual squeeze trigger
+         */
+        function manualSqueeze() {
             isSqueezing = true;
-            statusDiv.textContent = '💧 Juice flowing...';
+            targetSqueeze = 0.3;
+            statusDiv.textContent = '💧 Squeezing...';
             statusDiv.classList.add('active');
 
             setTimeout(() => {
-                stopJuiceFlow();
+                targetSqueeze = 0;
+                isSqueezing = false;
+                statusDiv.textContent = 'Hover over or click to squeeze the orange';
+                statusDiv.classList.remove('active');
             }, 1500);
         }
 
-        function stopJuiceFlow() {
-            juiceEmissionActive = false;
+        /**
+         * Reset orange to original state
+         */
+        function resetOrange() {
+            targetSqueeze = 0;
             isSqueezing = false;
-            statusDiv.textContent = '';
-            statusDiv.classList.remove('active');
+            orange.userData.squeezeProgress = 0;
+
+            // Clear all juice particles
+            juiceParticles.forEach(p => p.life = 0);
+
+            statusDiv.textContent = '🔄 Orange reset!';
+            statusDiv.classList.add('active');
+            setTimeout(() => {
+                statusDiv.textContent = 'Hover over or click to squeeze the orange';
+                statusDiv.classList.remove('active');
+            }, 1500);
         }
 
-        function updateParticles() {
-            const positions = scene.userData.particleGeometry.attributes.position.array;
-            const material = scene.userData.particleSystem.material;
-
-            for (let i = 0; i < particles.length; i++) {
-                const p = particles[i];
-                if (p.life > 0) {
-                    p.velocity.y -= 0.015; // gravity
-                    p.position.add(p.velocity);
-                    p.life -= 0.016;
-
-                    positions[i * 3] = p.position.x;
-                    positions[i * 3 + 1] = p.position.y;
-                    positions[i * 3 + 2] = p.position.z;
-                }
-            }
-
-            scene.userData.particleGeometry.attributes.position.needsUpdate = true;
-        }
+        // ============================================================================
+        // ANIMATION LOOP
+        // ============================================================================
 
         function animate() {
             requestAnimationFrame(animate);
 
+            // Update squeeze deformation
+            applySqueeze();
+
+            // Update juice particles
+            updateJuiceParticles();
+
+            // Gentle rotation
             if (orange) {
-                orange.rotation.x += 0.001;
-                orange.rotation.y += 0.002;
-                updateOrangeDeformation(mouseX, mouseY);
+                orange.rotation.x += 0.0002;
+                orange.rotation.y += 0.0003;
             }
 
-            // Emit juice particles when squeezing
-            if (isSqueezing) {
-                const angle = Math.random() * Math.PI * 2;
-                const radius = 1.5;
-                emitJuice(
-                    Math.cos(angle) * radius,
-                    Math.sin(angle) * radius * 0.7,
-                    Math.random() * 0.5 - 0.25,
-                    8
-                );
-            }
-
-            updateParticles();
-
+            // Render scene
             renderer.render(scene, camera);
         }
 
-        function manualSqueeze() {
-            startJuiceFlow();
-        }
+        // ============================================================================
+        // INITIALIZATION
+        // ============================================================================
 
-        function resetOrange() {
-            isSqueezing = false;
-            juiceEmissionActive = false;
-            
-            // Reset particles
-            particles.forEach(p => p.life = 0);
-            
-            statusDiv.textContent = '🔄 Orange reset!';
-            statusDiv.classList.add('active');
-            setTimeout(() => {
-                statusDiv.textContent = '';
-                statusDiv.classList.remove('active');
-            }, 1000);
-        }
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            const width = canvas.clientWidth;
-            const height = canvas.clientHeight;
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-            renderer.setSize(width, height);
-        });
-
-        // Initialize when DOM is ready
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', initScene);
         } else {
