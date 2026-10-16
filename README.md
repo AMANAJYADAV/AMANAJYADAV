@@ -11,16 +11,24 @@
 <!-- 1. ENGAGING HEADER BANNER & TYPING ANIMATION                                -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
-![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,45:161b22,80:0d2b45,100:004d40&height=200&section=header&text=Aman%20Ajeet%20Yadav&fontSize=50&fontColor=00f5ff&fontAlignY=38&animation=fadeIn&desc=IT%20Specialist%20%7C%20Python%20Engineer%20%7C%20Data%20Science%20%26%20AI&descSize=16&descAlignY=60&descColor=c9d1d9)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Aman%20Ajeet%20Yadav&fontSize=50&fontColor=00f5ff&fontAlignY=38&animation=fadeIn&desc=IT%20Specialist%20%7C%20Python%20Engineer%20%7C%20Data%20Science%20%26%20AI&descSize=16&descAlignY=60&descColor=c9d1d9" alt="Header Banner" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=00F5FF&background=00000000&center=true&vCenter=true&multiline=false&width=720&lines=Building+scalable+Python+applications+%26+ETL+pipelines...;Engineering+data-driven+solutions+%26+predictive+ML+models...;Turning+complex+datasets+into+clear+business+intelligence...;Always+optimizing+code%2C+queries%2C+and+system+architecture.)](https://git.io/typing-svg)
+<a href="https://github.com/AMANAJYADAV">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=00F5FF&background=00000000&center=true&vCenter=true&multiline=false&width=720&lines=Building+scalable+Python+applications+%26+ETL+pipelines...;Engineering+data-driven+solutions+%26+predictive+ML+models...;Turning+complex+datasets+into+clear+business+intelligence...;Always+optimizing+code%2C+queries%2C+and+system+architecture." alt="Typing SVG" />
+</a>
+
+<br><br>
 
 <!-- Quick Status Badges -->
-![Profile Views](https://komarev.com/ghpvc/?username=AMANAJYADAV&style=for-the-badge&color=00f5ff&labelColor=0d1117&label=PROFILE+VIEWS&abbreviated=true)
+<img src="https://komarev.com/ghpvc/?username=AMANAJYADAV&style=for-the-badge&color=00f5ff&labelColor=0d1117&label=PROFILE+VIEWS&abbreviated=true" alt="Profile Views" />
 &nbsp;
-[![GitHub Followers](https://img.shields.io/github/followers/AMANAJYADAV?style=for-the-badge&color=238636&labelColor=0d1117&label=FOLLOWERS&logo=github&logoColor=white)](https://github.com/AMANAJYADAV)
+<a href="https://github.com/AMANAJYADAV">
+  <img src="https://img.shields.io/github/followers/AMANAJYADAV?style=for-the-badge&color=238636&labelColor=0d1117&label=FOLLOWERS&logo=github&logoColor=white" alt="GitHub Followers" />
+</a>
 &nbsp;
-[![Status](https://img.shields.io/badge/STATUS-OPEN_TO_OPPORTUNITIES-00f5ff?style=for-the-badge&labelColor=0d1117)](#)
+<a href="mailto:amanjetasb@gmail.com">
+  <img src="https://img.shields.io/badge/STATUS-OPEN_TO_OPPORTUNITIES-00f5ff?style=for-the-badge&labelColor=0d1117" alt="Status" />
+</a>
 
 </div>
 
@@ -134,7 +142,9 @@ I am a results-driven **Python Developer and Data/AI Specialist** based in India
 <br><br>
 
 <!-- Contribution Activity Graph -->
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AMANAJYADAV&theme=tokyo-night&bg_color=0d1117&color=00f5ff&line=00f5ff&point=ffffff&area=true&area_color=00f5ff&hide_border=true&radius=8)](https://github.com/AMANAJYADAV)
+<a href="https://github.com/AMANAJYADAV">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AMANAJYADAV&theme=tokyo-night&bg_color=0d1117&color=00f5ff&line=00f5ff&point=ffffff&area=true&area_color=00f5ff&hide_border=true&radius=8" alt="Activity Graph" />
+</a>
 
 </div>
 
@@ -150,16 +160,17 @@ I am a results-driven **Python Developer and Data/AI Specialist** based in India
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aman_Ajeet_Yadav-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aj-amanajeetyadav/)
+<a href="https://www.linkedin.com/in/aj-amanajeetyadav/">
+  <img src="https://img.shields.io/badge/LinkedIn-Aman_Ajeet_Yadav-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-@AMANAJYADAV-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMANAJYADAV)
+<a href="https://github.com/AMANAJYADAV">
+  <img src="https://img.shields.io/badge/GitHub-@AMANAJYADAV-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
 &nbsp;
-[![Email](https://img.shields.io/badge/Email-amanjetasb@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amanjetasb@gmail.com)
-<!-- Optional: Uncomment the lines below if you want to add a Portfolio URL or Twitter/X link -->
-<!-- &nbsp; -->
-<!-- [![Portfolio](https://img.shields.io/badge/Portfolio-Website-00bfa5?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio-url.com) -->
-<!-- &nbsp; -->
-<!-- [![X / Twitter](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/your_handle) -->
+<a href="mailto:amanjetasb@gmail.com">
+  <img src="https://img.shields.io/badge/Email-amanjetasb@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
 
 <br><br>
 
