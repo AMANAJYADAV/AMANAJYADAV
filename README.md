@@ -1,45 +1,26 @@
 <!-- 
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                 🚀 AMAN AJEET YADAV - ADVANCED PORTFOLIO                     ║
-║        Ultra-Modern GitHub Profile with Interactive 3D Animations            ║
+║                 AMAN AJEET YADAV — GITHUB PROFILE README                     ║
+║         IT Specialist · Python Developer · Data Science & AI Engineer        ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
-
-This README features:
-✨ Interactive 3D Orange (squeeze & juice flow on hover/tap)
-✨ 3D Contribution Graph (rotatable, vibrant colors, interactive)
-✨ 3D Realistic Snake Animation (eating contribution squares)
-✨ Advanced Logo-Based Contribution Section
-✨ Smooth animations, TV-commercial quality effects
-
-To deploy: Save as README.md in your github.com/AMANAJYADAV/AMANAJYADAV repo
 -->
 
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- ANIMATED HERO BANNER -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
-![Header Banner](https://capsule-render.vercel.app/api?type=venom&color=0:0a0a2e,40:1a0533,70:0d2b45,100:0a3d2e&height=220&section=header&text=Aman%20Ajeet%20Yadav&fontSize=55&fontColor=a8edea&fontAlignY=40&animation=fadeIn&desc=%E2%97%88%20Python%20Developer%20%E2%97%88%20Data%20Science%20%E2%97%88%20AI%20Enthusiast%20%E2%97%88&descSize=16&descAlignY=62&descColor=fed6e3)
-
-
-<!-- ═ Animated Typing Tagline ═ -->
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=800&color=00F5FF&background=00000000&center=true&vCenter=true&multiline=false&width=700&lines=🧠+Turning+raw+data+into+real+intelligence...;🤖+Building+ML+models+that+matter...;📊+Data+Science+%26+AI+Enthusiast...;💡+One+algorithm+at+a+time.)](https://git.io/typing-svg)
-
-</div>
-
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- VISITOR COUNTER + BADGES -->
+<!-- 1. ENGAGING HEADER BANNER & TYPING ANIMATION                                -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
-<div align="center">
+![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,45:161b22,80:0d2b45,100:004d40&height=200&section=header&text=Aman%20Ajeet%20Yadav&fontSize=50&fontColor=00f5ff&fontAlignY=38&animation=fadeIn&desc=IT%20Specialist%20%7C%20Python%20Engineer%20%7C%20Data%20Science%20%26%20AI&descSize=16&descAlignY=60&descColor=c9d1d9)
 
-![Profile Views](https://komarev.com/ghpvc/?username=AMANAJYADAV&style=for-the-badge&color=00f5ff&label=PROFILE+VIEWS&abbreviated=true)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=00F5FF&background=00000000&center=true&vCenter=true&multiline=false&width=720&lines=Building+scalable+Python+applications+%26+ETL+pipelines...;Engineering+data-driven+solutions+%26+predictive+ML+models...;Turning+complex+datasets+into+clear+business+intelligence...;Always+optimizing+code%2C+queries%2C+and+system+architecture.)](https://git.io/typing-svg)
+
+<!-- Quick Status Badges -->
+![Profile Views](https://komarev.com/ghpvc/?username=AMANAJYADAV&style=for-the-badge&color=00f5ff&labelColor=0d1117&label=PROFILE+VIEWS&abbreviated=true)
 &nbsp;
-![GitHub followers](https://img.shields.io/github/followers/AMANAJYADAV?style=for-the-badge&color=302b63&labelColor=0f0c29&label=FOLLOWERS&logo=github&logoColor=00f5ff)
+[![GitHub Followers](https://img.shields.io/github/followers/AMANAJYADAV?style=for-the-badge&color=238636&labelColor=0d1117&label=FOLLOWERS&logo=github&logoColor=white)](https://github.com/AMANAJYADAV)
 &nbsp;
-![GitHub User's stars](https://img.shields.io/github/stars/AMANAJYADAV?affiliations=OWNER&style=for-the-badge&color=ff006e&label=STARS)
+[![Status](https://img.shields.io/badge/STATUS-OPEN_TO_OPPORTUNITIES-00f5ff?style=for-the-badge&labelColor=0d1117)](#)
 
 </div>
 
@@ -48,106 +29,84 @@ To deploy: Save as README.md in your github.com/AMANAJYADAV/AMANAJYADAV repo
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- INTERACTIVE 3D SECTION -->
+<!-- 2. ABOUT ME & CURRENT STATUS                                                -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
-<div align="center">
+## `>_ About Me & Current Focus`
 
-## 🎮 Interactive 3D Experience
+I am a results-driven **Python Developer and Data/AI Specialist** based in India, focused on building robust backend architectures, automating data pipelines, and deploying machine learning models that solve real operational problems.
 
-Click below to explore interactive visualizations:
-
-[![3D Orange Animation](https://img.shields.io/badge/🍊_3D_Interactive_Orange-FF8C00?style=for-the-badge&logo=html5&logoColor=white)](https://AMANAJYADAV.github.io/AMANAJYADAV/interactive-3d-orange.html)
-&nbsp;
-[![3D Graph](https://img.shields.io/badge/📊_3D_Contribution_Graph-00D4FF?style=for-the-badge&logo=chart-line&logoColor=white)](https://AMANAJYADAV.github.io/AMANAJYADAV/3d-contribution-graph.html)
-&nbsp;
-[![3D Snake](https://img.shields.io/badge/🐍_3D_Snake_Game-00FF88?style=for-the-badge&logo=gamepad&logoColor=white)](https://AMANAJYADAV.github.io/AMANAJYADAV/3d-snake-animation.html)
-
-
-<sub>✨ Hover over the orange to squeeze it and watch juice flow! | Rotate the 3D graph with your mouse | Play the interactive snake game!</sub>
-
-</div>
+- 🔭 **Currently Working On:** End-to-end Python/Django web systems, automated ETL workflows, and predictive analytics models.
+- 🌱 **Currently Learning:** Advanced Deep Learning architectures (`TensorFlow` / `PyTorch`), IBM Applied Data Science specializations, and scalable system design.
+- 💡 **Core Expertise:** Statistical data modeling, relational database optimization (`MySQL`), machine learning engineering, and executive BI dashboarding (`Power BI`).
+- 🤝 **Open to Collaborate On:** Open-source Python tools, data engineering frameworks, and applied AI projects.
+- 📫 **Direct Contact:** Reach me anytime at **[amanjetasb@gmail.com](mailto:amanjetasb@gmail.com)**
 
 <br>
 
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- ABOUT ME SECTION -->
+<!-- 3. TECH STACK & TOOLS                                                       -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
-<div align="center">
+## `>_ Tech Stack & Engineering Tools`
 
-## `< About Me />`
-
-</div>
-
-<table align="center" border="0" cellpadding="20" cellspacing="0">
-<tr>
-<td valign="top" width="50%">
-
-```python
-class AmanAjeetYadav:
-    def __init__(self):
-        self.name       = "Aman Ajeet Yadav"
-        self.title      = "Python Developer & AI Enthusiast"
-        self.location   = "India 🇮🇳"
-        self.email      = "amanjetasb@gmail.com"
-        
-    def expertise(self):
-        return {
-            "languages": ["Python", "JavaScript", "jQuery"],
-            "databases": ["MySQL"],
-            "ml_frameworks": [
-                "TensorFlow", "Keras", "PyTorch",
-                "Scikit-Learn"
-            ],
-            "data_tools": [
-                "Pandas", "NumPy", "Matplotlib",
-                "Seaborn", "SPSS"
-            ],
-            "viz_tools": [
-                "Power BI", "Excel", "Jupyter"
-            ]
-        }
-    
-    def currently_learning(self):
-        return [
-            "🔹 Advanced Python & Django",
-            "🔹 Machine Learning & AI",
-            "🔹 Applied Data Science (IBM)",
-            "🔹 Data Science with Python (IBM)",
-            "🔹 Deep Learning + TensorFlow (IBM)"
-        ]
-    
-    def hobbies(self):
-        return ["🎮 Games", "🎧 Music", "🏃 Exercise", "🔍 Research"]
-    
-    def contact(self):
-        return "amanjetasb@gmail.com"
-```
-
-</td>
-<td valign="top" width="50%">
-
-<div align="center">
-
-![Illustration](https://raw.githubusercontent.com/gabrlcj/gabrlcj/2aa161dfb942e25ec84396721837dfccc98e08f2/Illustration.svg)
-
-## `3D Interactive Orange `
-
-### 🍊 Hover over the orange or tap to squeeze it and watch the juice flow in 3D!
-
-<a href="https://AMANAJYADAV.github.io/AMANAJYADAV/interactive-3d-orange.html" target="_blank">
-  <img src="https://img.shields.io/badge/🍊_Squeeze_3D_Orange-FF8C00?style=for-the-badge&logo=html5&logoColor=white" alt="3D Interactive Orange"/>
-</a>
-
-<sub>Watch realistic juice flow animation!</sub>
-
-</div>
-
-</td>
-</tr>
+<table align="center" width="100%">
+  <thead>
+    <tr>
+      <th align="left" width="26%">Category</th>
+      <th align="left" width="74%">Technologies & Frameworks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>💻 Languages & Backend</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery" />
+        <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
+      </td>
+    </tr>
+    <tr>
+      <td><b>🧠 Machine Learning & AI</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+        <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" />
+        <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
+      </td>
+    </tr>
+    <tr>
+      <td><b>🗄️ Data & Databases</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+        <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+        <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+        <img src="https://img.shields.io/badge/IBM_SPSS-052FAD?style=for-the-badge&logo=ibm&logoColor=white" alt="SPSS" />
+      </td>
+    </tr>
+    <tr>
+      <td><b>📊 Analytics & BI</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black" alt="Power BI" />
+        <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
+        <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
+        <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel" />
+      </td>
+    </tr>
+    <tr>
+      <td><b>🛠️ DevOps & Workflow</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+        <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
+        <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 <br>
@@ -155,283 +114,55 @@ class AmanAjeetYadav:
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- GITHUB STATS -->
+<!-- 4. GITHUB STATS, STREAKS & ACTIVITY                                         -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
+
+## `>_ GitHub Analytics & Contribution Telemetry`
 
 <div align="center">
 
-## `< Stats & Achievement />`
-
-<br>
-
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=AMANAJYADAV&show_icons=true&theme=tokyonight&title_color=00f5ff&text_color=c9d1d9&icon_color=ff79c6&hide_border=true&bg_color=0d1117&ring_color=00f5ff&border_radius=10&count_private=true" alt="GitHub Stats"/>
+<!-- Overall Stats & Top Languages -->
+<img height="175em" src="https://github-readme-stats.vercel.app/api?username=AMANAJYADAV&show_icons=true&theme=tokyonight&title_color=00f5ff&text_color=c9d1d9&icon_color=00f5ff&hide_border=true&bg_color=0d1117&ring_color=00f5ff&border_radius=8&count_private=true" alt="GitHub Stats" />
 &nbsp;&nbsp;
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs?username=AMANAJYADAV&show_icons=true&theme=tokyonight&title_color=00f5ff&text_color=c9d1d9&icon_color=ff79c6&layout=compact&hide_border=true&bg_color=0d1117&border_radius=10" alt="Top Languages"/>
+<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs?username=AMANAJYADAV&show_icons=true&theme=tokyonight&title_color=00f5ff&text_color=c9d1d9&icon_color=00f5ff&layout=compact&hide_border=true&bg_color=0d1117&border_radius=8" alt="Top Languages" />
 
 <br><br>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AMANAJYADAV&theme=tokyonight&hide_border=true&background=0d1117&ring=00f5ff&fire=ff79c6&currStreakLabel=00f5ff&sideLabels=c9d1d9&sideNums=c9d1d9&dates=777" alt="GitHub Streak"/>
-
-</div>
-
-<br>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- 3D CONTRIBUTION GRAPH -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## `< 3D Contribution Activity />`
-
-### 📊 Interactive Visualization — Click below to explore your contributions in stunning 3D!
-
-<a href="https://AMANAJYADAV.github.io/AMANAJYADAV/3d-contribution-graph.html" target="_blank">
-  <img src="https://img.shields.io/badge/🎨_Launch_3D_Graph_Viewer-00D4FF?style=for-the-badge&logo=chart-line&logoColor=white" alt="3D Graph"/>
-</a>
-
-**Features:**
-- ✨ Rotatable 3D bars (drag with mouse)
-- 🎨 Vibrant color schemes (Ocean / Sunset / Neon)
-- 📊 Real-time contribution tracking
-- 🔄 Auto-rotate toggle
-
-*Built with Three.js for smooth, interactive 3D rendering*
-
-</div>
-
-<br>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- 3D SNAKE ANIMATION -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## `< 3D Snake Game />`
-
-### 🐍 Watch the snake devour contribution squares in glorious 3D!
-
-<a href="https://AMANAJYADAV.github.io/AMANAJYADAV/3d-snake-animation.html" target="_blank">
-  <img src="https://img.shields.io/badge/▶_Play_3D_Snake_Game-00FF88?style=for-the-badge&logo=gamepad&logoColor=white" alt="Snake Game"/>
-</a>
-
-**Game Controls:**
-- ⬆️⬇️⬅️➡️ or WASD to move
-- 🐍 Realistic snake textures with scale details
-- 🎥 Multiple camera angles
-- 📈 Track your score and snake length
-
-*Smooth, lifelike 3D animation with particle effects*
-
-</div>
-
-<br>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- SKILLS & TECHNOLOGIES -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## `< Skills & Technologies />`
-
-</div>
-
-<br>
-
-<div align="center">
-
-### 🧬 Core Languages & Databases
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org)
-[![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com)
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
-[![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)](https://latex-project.org)
-
-### 🤖 Data Science & Machine Learning
-
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org)
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![SPSS](https://img.shields.io/badge/SPSS-0097A7?style=for-the-badge&logo=ibm&logoColor=white)](#)
-
-### 🧠 Deep Learning Frameworks
-
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
-[![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
-
-### 📊 Visualization & BI Tools
-
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-008080?style=for-the-badge&logo=matplotlib&logoColor=white)](#)
-[![Seaborn](https://img.shields.io/badge/Seaborn-009688?style=for-the-badge)](#)
-[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)](https://powerbi.microsoft.com)
-[![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://microsoft.com/excel)
-
-### 🔧 Development Tools
-
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](#)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](#)
-
-</div>
-
-<br>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- LEARNING JOURNEY -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## `< Currently Learning />`
-
-<br>
-
-| 📚 Course | Platform | Status |
-|:---|:---:|:---:|
-| **Advanced Python & Django** | Self-directed | 🟠 In Progress |
-| **Machine Learning & AI** | Various | 🟠 In Progress |
-| **Applied Data Science** | IBM Coursera | 🟠 In Progress |
-| **Data Science using Python** | IBM Coursera | 🟠 In Progress |
-| **Deep Learning with TensorFlow** | IBM Coursera | 🟠 In Progress |
-
-</div>
-
-<br>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- CONTRIBUTION HIGHLIGHTS -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## `< Active On />`
-
-<br>
-
-### 🌐 Connected Communities & Platforms
-
-</div>
-
-<table align="center" border="0" cellpadding="12" cellspacing="8">
-<tr>
-<td align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2)](https://www.linkedin.com/in/aj-amanajeetyadav/)
-
-**LinkedIn**
-
-Aman Ajeet Yadav
-
-</td>
-<td align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717)](https://github.com/AMANAJYADAV)
-
-**GitHub**
-
-@AMANAJYADAV
-
-</td>
-<td align="center">
-
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=EA4335)](mailto:amanjetasb@gmail.com)
-
-**Email**
-
-amanjetasb@gmail.com
-
-</td>
-</tr>
-</table>
-
-<br>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- ACTIVITY GRAPH -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## `< Contribution Timeline />`
-
-<br>
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AMANAJYADAV&theme=tokyo-night&bg_color=0d1117&color=00f5ff&line=ff79c6&point=ffffff&area=true&area_color=00f5ff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
-<br>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- QUICK STATS TABLE -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## `< Key Metrics />`
-
-| Metric | Value |
-|:---|---:|
-| **Total GitHub Contributions** | 2,800+ |
-| **Current Streak** | 🔥 24 days |
-| **Longest Streak** | 📈 87 days |
-| **Public Repositories** | 15+ |
-| **GitHub Followers** | 50+ |
-| **Years of Coding** | 3+ |
-
-</div>
-
-<br>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- FOOTER -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=140&section=footer&animation=twinkling)
-
-<br>
-
-### 🚀 Let's Build Something Amazing Together!
-
-<sub>
-✨ Crafted with passion and cutting-edge 3D technology · 
-<a href="https://github.com/AMANAJYADAV">AMANAJYADAV</a> · 
-Last updated: 2025
-</sub>
+<!-- Contribution Streak -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AMANAJYADAV&theme=tokyonight&hide_border=true&background=0d1117&ring=00f5ff&fire=00f5ff&currStreakLabel=00f5ff&sideLabels=c9d1d9&sideNums=c9d1d9&dates=8b949e&border_radius=8" alt="GitHub Streak" />
 
 <br><br>
 
-**Quick Links:** 
-[🍊 3D Orange](https://amanajyadav.github.io/interactive-3d-orange.html) · 
-[📊 3D Graph](https://amanajyadav.github.io/3d-contribution-graph.html) · 
-[🐍 Snake Game](https://amanajyadav.github.io/3d-snake-animation.html) · 
-[📧 Email](mailto:amanjetasb@gmail.com)
+<!-- Contribution Activity Graph -->
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AMANAJYADAV&theme=tokyo-night&bg_color=0d1117&color=00f5ff&line=00f5ff&point=ffffff&area=true&area_color=00f5ff&hide_border=true&radius=8)](https://github.com/AMANAJYADAV)
 
 </div>
 
+<br>
+
+---
+
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- END OF README -->
+<!-- 5. CONNECT WITH ME                                                          -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
+
+## `>_ Connect With Me`
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aman_Ajeet_Yadav-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aj-amanajeetyadav/)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-@AMANAJYADAV-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AMANAJYADAV)
+&nbsp;
+[![Email](https://img.shields.io/badge/Email-amanjetasb@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amanjetasb@gmail.com)
+<!-- Optional: Uncomment the lines below if you want to add a Portfolio URL or Twitter/X link -->
+<!-- &nbsp; -->
+<!-- [![Portfolio](https://img.shields.io/badge/Portfolio-Website-00bfa5?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio-url.com) -->
+<!-- &nbsp; -->
+<!-- [![X / Twitter](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/your_handle) -->
+
+<br><br>
+
+<sub>⚡ Engineered by <a href="https://github.com/AMANAJYADAV">Aman Ajeet Yadav</a> · Always building, testing, and iterating.</sub>
+
+</div>
